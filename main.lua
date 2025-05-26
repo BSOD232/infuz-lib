@@ -1,5 +1,4 @@
 local UserInputService = game:GetService("UserInputService")
-local CoreGui = gethui()
 
 local infuz = {}
 infuz.__index = infuz
@@ -58,7 +57,7 @@ function infuz:CreateSettingsModal(title)
 	modal.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	modal.BorderSizePixel = 0
 	modal.Visible = true
-	modal.Parent = CoreGui
+	modal.Parent = gethui()
 	modal.ZIndex = 999
 	
 	table.insert(allWindows, modal)
