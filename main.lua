@@ -1,4 +1,5 @@
 local UserInputService = game:GetService("UserInputService")
+local CoreGui = Instance.new("ScreenGui", gethui())
 
 local infuz = {}
 infuz.__index = infuz
@@ -57,7 +58,7 @@ function infuz:CreateSettingsModal(title)
 	modal.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	modal.BorderSizePixel = 0
 	modal.Visible = true
-	modal.Parent = game:GetService("CoreGui")
+	modal.Parent = CoreGui
 	modal.ZIndex = 999
 	
 	table.insert(allWindows, modal)
@@ -100,7 +101,7 @@ function infuz:CreateCategory(name, position)
 	CategoryFrame.BackgroundColor3 = Color3.fromRGB(21, 28, 31)
 	CategoryFrame.BorderSizePixel = 0
 	CategoryFrame.Active = true
-	CategoryFrame.Parent = game:GetService("CoreGui")
+	CategoryFrame.Parent = CoreGui
 	
 	table.insert(allWindows, CategoryFrame)
 
