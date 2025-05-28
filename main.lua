@@ -1,5 +1,5 @@
 local UserInputService = game:GetService("UserInputService")
-local CoreGui = Instance.new("ScreenGui", gethui())
+local CoreGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
 
 local infuz = {}
 infuz.__index = infuz
