@@ -57,7 +57,7 @@ function infuz:CreateSettingsModal(title)
 	modal.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	modal.BorderSizePixel = 0
 	modal.Visible = true
-	modal.Parent = gethui()
+	modal.Parent = game:GetService("CoreGui")
 	modal.ZIndex = 999
 	
 	table.insert(allWindows, modal)
