@@ -100,7 +100,7 @@ function infuz:CreateCategory(name, position)
 	CategoryFrame.BackgroundColor3 = Color3.fromRGB(21, 28, 31)
 	CategoryFrame.BorderSizePixel = 0
 	CategoryFrame.Active = true
-	CategoryFrame.Parent = CoreGui
+	CategoryFrame.Parent = game:GetService("CoreGui")
 	
 	table.insert(allWindows, CategoryFrame)
 
